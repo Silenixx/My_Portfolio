@@ -1,25 +1,25 @@
 [
   {
-    "title": "Project PortFolio",
+    "title": "This PortFolio",
     "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node"],
+    "description": "This is a project made to prsent myself and train myself using react and vite.js.",
+    "skills": ["React", "Vite.js", "Node"],
     "demo": "https://www.example.com",
-    "source": "https://www.github.com"
+    "source": "https://github.com/Silenixx/My_Portfolio"
   },
   {
-    "title": "Project B",
+    "title": "Personnal Website",
     "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node", "Sass"],
+    "description": "Build in symfony for the back-end and next.js for the front-end.",
+    "skills": ["React", "Symfopny", "Node", "PHP", "MariaDB"],
     "demo": "https://www.example.com",
-    "source": "https://www.github.com"
+    "source": "https://github.com/Silenixx/lukas_website"
   },
   {
-    "title": "Project C",
+    "title": "Personnal application",
     "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node"],
+    "description": "Made with flutter. Fom an common idea with a friend. We wanted to make an app to help people to find friends or activities to do.",
+    "skills": ["Flutter", "Firebase", "Dart"],
     "demo": "https://www.example.com",
     "source": "https://www.github.com"
   }

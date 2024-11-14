@@ -4,7 +4,12 @@
     "organisation": "Tracip",
     "startDate": "October, 2023",
     "endDate": "Present",
-    "experiences": ["Worked on an ERP", "Create many tools for the company"],
+    "experiences": 
+    [
+      "Create a company ERP", 
+      "Developped from scratch with Symfony Framework",
+      "Create many apps for different poles of the company"
+    ],
     "imageSrc": "history/tracip.png"
   },
   {

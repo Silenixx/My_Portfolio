@@ -8,6 +8,13 @@
   box-shadow: 0 16px 14px 0 #04152d;
   padding: 18px 24px;
   max-width: 345px;
+  height: 650px;
+  transition: transform 0.5s cubic-bezier(0.4, 0.0, 0.2, 1), box-shadow 0.5s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+.container:hover {
+  transform: scale(1.03);
+  box-shadow: 0 24px 20px 0 rgba(4, 21, 45, 0.7);
 }
 
 .image {
@@ -21,8 +28,9 @@
 
 .description {
   margin-top: 6px;
-  font-size: 25px;
+  font-size: 23px;
   font-weight: 400;
+  height: 200px;
 }
 
 .skills {
@@ -33,6 +41,11 @@
   flex-wrap: wrap;
   gap: 6px;
   list-style: none;
+}
+
+.skillsContainer
+{
+  height: 180px;
 }
 
 .skill {

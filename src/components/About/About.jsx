@@ -1,9 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 
+import classNames from "classnames";
 import styles from "./About.module.css";
 import { getImageUrl } from "../../utils";
 
 export const About = () => {
+  const [isRotated, setIsRotated] = useState(false);
+
+  const handleImageClick = () => {
+    setIsRotated((prevState) => !prevState);
+  };
+  
+  const imageClass = classNames(styles.aboutImage, {
+    [styles.rotated]: isRotated,
+  });
+
   return (
     <section className={styles.container} id="about">
       <h2 className={styles.title}>About</h2>
@@ -11,7 +22,8 @@ export const About = () => {
         <img
           src={getImageUrl("about/aboutImage.png")}
           alt="Me sitting with a laptop"
-          className={styles.aboutImage}
+          className={imageClass}
+          onClick={handleImageClick}
         />
         <ul className={styles.aboutItems}>
           <li className={styles.aboutItem}>

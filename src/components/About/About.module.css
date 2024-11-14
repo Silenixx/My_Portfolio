@@ -26,8 +26,17 @@
 }
 
 .aboutImage {
-  width: 35%;
+  width: 30%;
+  margin-right: 20PX;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
 }
+.aboutImage.rotated {
+  transform: rotateY(180deg);
+}
+
 
 .aboutItems {
   color: var(--color-text);

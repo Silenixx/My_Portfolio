@@ -32,7 +32,7 @@
 }
 
 .skills {
-  width: 45%;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   gap: 37px;
@@ -54,6 +54,11 @@
   width: 120px;
   height: 120px;
 }
+
+.skillImageContainer:hover {
+  background-color: color-mix(in srgb, var(--color-secondary) 86%, white); /* Mélange le bleu avec du blanc à 70% */
+}
+
 
 .skillImageContainer img {
   width: 75px;
