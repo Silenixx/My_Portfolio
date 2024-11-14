@@ -1,0 +1,19 @@
+[
+  {
+    "role": "Full Stack Developer",
+    "organisation": "Tracip",
+    "startDate": "October, 2023",
+    "endDate": "Present",
+    "experiences": ["Worked on an ERP", "Create many tools for the company"],
+    "imageSrc": "history/tracip.png"
+  },
+  {
+    "role": "Full Stack Developer",
+    "organisation": "Venathec",
+    "startDate": "September, 2022",
+    "endDate": "September, 2023",
+    "experiences": ["Worked on an ERP", "Web native languages"],
+    "imageSrc": "history/venathec.png"
+  }
+  
+]
