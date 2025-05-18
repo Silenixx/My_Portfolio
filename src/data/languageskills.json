@@ -9,6 +9,10 @@
     "imageSrc": "skills/css.png"
   },
   {
+    "title": "JS",
+    "imageSrc": "skills/js.webp"
+  },
+  {
     "title": "Node",
     "imageSrc": "skills/node.png"
   },

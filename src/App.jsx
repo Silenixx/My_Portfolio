@@ -6,6 +6,7 @@ import { Hero } from "./components/Hero/Hero";
 import { Navbar } from "./components/Navbar/Navbar";
 import { Projects } from "./components/Projects/Projects";
 import { Skills } from "./components/Skills/Skills";
+import { Education } from "./components/Education/Education";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <About />
       <Experience />
       <Skills />
+      <Education />
       <Projects />
       <Contact />
     </div>

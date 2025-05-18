@@ -1,14 +1,17 @@
 [
   {
     "role": "Full Stack Developer",
-    "organisation": "Tracip",
+    "organisation": "Tracip by ChapsVision",
     "startDate": "October, 2023",
     "endDate": "Present",
     "experiences": 
     [
-      "Create a company ERP", 
-      "Developped from scratch with Symfony Framework",
-      "Create many apps for different poles of the company"
+      "Led the development of a fully custom ERP system, from requirements gathering to deployment",
+      "Designed the database schema and developed the entire back-end using Symfony",
+      "Built dynamic and responsive front-end interfaces without frontend frameworks (Twig)",
+      "Managed the full project lifecycle while collaborating with multiple departments (training, investigation, data recovery, accounting)",
+      "Worked independently as the sole developer, while mentoring a junior intern",
+      "Set up modular architecture to handle evolving business needs efficiently"
     ],
     "imageSrc": "history/tracip.png"
   },
@@ -17,7 +20,11 @@
     "organisation": "Venathec",
     "startDate": "September, 2022",
     "endDate": "September, 2023",
-    "experiences": ["Worked on an ERP", "Web native languages"],
+    "experiences": [
+      "Contributed to the development of an internal ERP used across multiple departments",
+      "Developed and maintained front-end components using HTML, CSS, and JavaScript",
+      "Handled data operations and business rules using PHP and custom SQL queries, without frameworks"
+    ],
     "imageSrc": "history/venathec.png"
   }
   

@@ -2,23 +2,23 @@
   {
     "title": "This PortFolio",
     "imageSrc": "projects/project.png",
-    "description": "This is a project made to prsent myself and train myself using react and vite.js.",
+    "description": "This is a project made to present myself and train myself using react and vite.js.",
     "skills": ["React", "Vite.js", "Node"],
     "demo": "https://portfolio.lukasblanchot.synology.me/",
     "source": "https://github.com/Silenixx/My_Portfolio"
   },
   {
-    "title": "Personnal Website",
+    "title": "Personal Website",
     "imageSrc": "projects/project.png",
     "description": "Build in symfony for the back-end and next.js for the front-end.",
-    "skills": ["React", "Symfopny", "Node", "PHP", "MariaDB"],
+    "skills": ["React", "Symfony", "Node", "PHP", "MariaDB"],
     "demo": "#",
     "source": "https://github.com/Silenixx/lukas_website"
   },
   {
-    "title": "Personnal application",
+    "title": "Personal application",
     "imageSrc": "projects/project.png",
-    "description": "Made with flutter. Fom an common idea with a friend. We wanted to make an app to help people to find friends or activities to do.",
+    "description": "Made with flutter. From a common idea with a friend. We wanted to make an app to help people to find friends or activities to do.",
     "skills": ["Flutter", "Firebase", "Dart"],
     "demo": "#",
     "source": "#"

@@ -1,0 +1,59 @@
+[
+  {
+    "program": "Master's Degree – Software Architecture and Information Systems",
+    "school": "CESI",
+    "startDate": "October, 2023",
+    "endDate": "Present",
+    "degreeStatus": "in progress",
+    "level": "Bac +5",
+    "acquiredSkills": [
+      "Project management and agile methodologies",
+      "Software architecture and clean code",
+      "DevOps practices and CI/CD pipelines"
+    ],
+    "imageSrc": "education/cesi.png"
+  },
+  {
+    "program": "Bachelor's Degree – Application Developer and Software Designer",
+    "school": "CESI",
+    "startDate": "September, 2022",
+    "endDate": "September, 2023",
+    "degreeStatus": "obtained",
+    "level": "Bac +3",
+    "acquiredSkills": [
+      "Web development with React",
+      "Database modeling and SQL",
+      "Mobile application development with Flutter",
+      "Software design patterns and principles",
+      "Collaborative development and Git"
+      
+    ],
+    "imageSrc": "education/cesi.png"
+  },
+  {
+    "program": "Engineering Studies – Computer Science (3rd Year)",
+    "school": "Université de Technologie de Belfort-Montbéliard",
+    "startDate": "June, 2021",
+    "endDate": "June, 2022",
+    "degreeStatus": "not obtained",
+    "acquiredSkills": [
+      "Microprocessor programming",
+      "Embedded systems",
+      "Object-oriented programming"
+    ],
+    "imageSrc": "education/utbm.png"
+  },
+  {
+    "program": "Preparatory Class for Engineering Schools",
+    "school": "Université de Technologie de Belfort-Montbéliard",
+    "startDate": "September, 2019",
+    "endDate": "June, 2021",
+    "degreeStatus": "not obtained",
+    "acquiredSkills": [
+      "Mathematics and logic reasoning",
+      "Algorithmic fundamentals",
+      "Introduction to programming (Python, Java, C, C++, VBA)"
+    ],
+    "imageSrc": "education/utbm.png"
+  }
+]

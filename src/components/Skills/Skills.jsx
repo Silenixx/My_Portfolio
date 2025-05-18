@@ -59,7 +59,7 @@ export const Skills = () => {
               </div>
             );
           })}
-          <h4 className={styles.titleSectionSkills}>Other skills</h4>
+          {/* <h4 className={styles.titleSectionSkills}>Other skills</h4>
           {bonusskills.map((bonusskills, id) => {
             return (
               <div key={id} className={styles.skill}>
@@ -69,7 +69,7 @@ export const Skills = () => {
                 <p>{bonusskills.title}</p>
               </div>
             );
-          })}
+          })} */}
         </div>
         
       </div>

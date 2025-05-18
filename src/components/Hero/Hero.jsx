@@ -9,7 +9,7 @@ export const Hero = () => {
       <div className={styles.content}>
         <h1 className={styles.title}>Hi, I'm Lukas</h1>
         <p className={styles.description}>
-          I'm a full-stack developer with 5 years of experience. Reach out if you'd like to learn more!
+        I'm a full-stack developer with 5+ years of experience, passionate about crafting fast, scalable, and user-friendly web applications. From intuitive front-end interfaces to powerful back-end architectures, I bring ideas to life through code. Let's build something great together!
         </p>
         <a href="mailto:lukas.blanchot@hotmail.fr" className={styles.contactBtn}>
           Contact Me

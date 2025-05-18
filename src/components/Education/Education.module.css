@@ -1,0 +1,124 @@
+@import "../../vars.css";
+
+.container {
+  color: var(--color-text);
+  margin-top: 79px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.title {
+  color: var(--color-text);
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: 1.75px;
+  text-transform: uppercase;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  margin-top: 14px;
+  margin-left: 40px;
+}
+
+.education {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.educationItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 17px;
+  background: linear-gradient(90deg, #19376d 0%, rgba(25, 55, 109, 0) 100%);
+  border-radius: 10px;
+  padding: 24px;
+  width: 90em;
+}
+
+.educationItemLogo img {
+  width: 125px;
+}
+
+.educationItemContent {
+  font-family: var(--font-roboto);
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+/* Nouveaux blocs */
+
+.educationHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.programLine {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.metaLine {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.program {
+  font-size: 26px;
+  font-weight: 600;
+  color: var(--color-text);
+  margin: 0;
+}
+
+.school {
+  font-size: 17px;
+  font-weight: 600;
+  color: #ffffff; /* bien visible, tu peux aussi mettre var(--color-text) */
+}
+
+.date {
+  font-size: 15px;
+  font-weight: 400;
+  color: #aaa; /* plus doux pour moins d’impact visuel */
+}
+
+
+.level {
+  font-size: 14px;
+  font-weight: 600;
+  color: #2196f3;
+  background-color: rgba(33, 150, 243, 0.15);
+  padding: 4px 12px;
+  border-radius: 12px;
+  white-space: nowrap;
+}
+
+/* Facultatif : pour les compétences */
+.skillsList {
+  margin-top: 10px;
+  list-style: disc;
+  padding-left: 1.5em;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+
+.educationItem:hover {
+  background: linear-gradient(90deg, #1e4aa3 0%, rgba(30, 74, 163, 0) 100%);
+  transform: translateY(-3px);
+  transition: all 0.3s ease;
+  cursor: default;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}

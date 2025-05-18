@@ -82,10 +82,11 @@
   background: linear-gradient(90deg, #19376d 0%, rgba(25, 55, 109, 0) 100%);
   border-radius: 10px;
   padding: 24px;
+  width: 90em;
 }
 
 .historyItem img {
-  width: 100px;
+  width: 125px;
 }
 
 .historyItemDetails {
@@ -103,12 +104,30 @@
 }
 
 .historyItemDetails ul {
-  margin-top: 6px;
-  list-style-position: inside;
+  margin-top: 15px;
+  list-style-position: outside;
   font-size: 25px;
   list-style-type: disc;
-  margin-left: 17px;
+  margin-left: 20px;
+  padding-left: 1.5em;
 }
+
+.historyItem:hover {
+  background: linear-gradient(90deg, #1e4aa3 0%, rgba(30, 74, 163, 0) 100%);
+  transform: translateY(-3px);
+  transition: all 0.3s ease;
+  cursor: default;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+@media screen and (min-width: 831px) {
+  .historyItemDetails ul li {
+    margin-bottom: 6px;
+  }
+}
+
+
 
 @media screen and (max-width: 830px) {
   .content {
