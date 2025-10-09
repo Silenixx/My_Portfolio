@@ -4,12 +4,17 @@
     "school": "CESI",
     "startDate": "October, 2023",
     "endDate": "Present",
-    "degreeStatus": "in progress",
+    "degreeStatus": "obtained",
     "level": "Bac +5",
     "acquiredSkills": [
       "Project management and agile methodologies",
       "Software architecture and clean code",
-      "DevOps practices and CI/CD pipelines"
+      "DevOps practices and CI/CD pipelines",
+      "Enterprise architecture & system audit",
+      "Cloud native architectures & microservices",
+      "Application security & secure coding",
+      "Project portfolio management & SI governance",
+      "Team leadership & stakeholder communication"
     ],
     "imageSrc": "education/cesi.png"
   },
@@ -25,7 +30,12 @@
       "Database modeling and SQL",
       "Mobile application development with Flutter",
       "Software design patterns and principles",
-      "Collaborative development and Git"
+      "Collaborative development and Git",
+      "Requirement analysis & specification writing",
+      "Object-oriented programming & design patterns",
+      "Unit testing & TDD",
+      "REST API development & integration",
+      "Performance optimization & debugging"
       
     ],
     "imageSrc": "education/cesi.png"
@@ -39,7 +49,14 @@
     "acquiredSkills": [
       "Microprocessor programming",
       "Embedded systems",
-      "Object-oriented programming"
+      "Object-oriented programming",
+
+      "Systems architecture and modeling",
+      "Database design and optimization",
+      "Operating systems and low-level programming",
+      "Software specification and requirements engineering",
+      "System integration and middleware",
+      "Testing, debugging and performance optimization"
     ],
     "imageSrc": "education/utbm.png"
   },
@@ -52,7 +69,13 @@
     "acquiredSkills": [
       "Mathematics and logic reasoning",
       "Algorithmic fundamentals",
-      "Introduction to programming (Python, Java, C, C++, VBA)"
+      "Introduction to programming (Python, Java, C, C++, VBA)",
+
+      "Physics and digital electronics basics",
+      "Introduction to databases and data structures",
+      "Computer architecture and operating principles",
+      "Engineering project methodology",
+      "Technical communication and English for engineers"
     ],
     "imageSrc": "education/utbm.png"
   }

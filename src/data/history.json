@@ -1,17 +1,20 @@
 [
   {
-    "role": "Full Stack Developer",
+    "role": "Full Stack Developer & Project Manager",
     "organisation": "Tracip by ChapsVision",
     "startDate": "October, 2023",
     "endDate": "Present",
     "experiences": 
     [
       "Led the development of a fully custom ERP system, from requirements gathering to deployment",
-      "Designed the database schema and developed the entire back-end using Symfony",
+      "Designed the complete database schema, ensuring consistency and scalability",
+      "Developed the entire back-end using Symfony, focusing on performance and maintainability",
       "Built dynamic and responsive front-end interfaces without frontend frameworks (Twig)",
       "Managed the full project lifecycle while collaborating with multiple departments (training, investigation, data recovery, accounting)",
-      "Worked independently as the sole developer, while mentoring a junior intern",
-      "Set up modular architecture to handle evolving business needs efficiently"
+      "Implemented and automated the CI/CD pipeline, including testing, build, and full production deployment",
+      "Worked independently as the sole developer responsible for the entire project",
+      "Supervised and mentored a junior intern throughout their training and tasks",
+      "Set up a modular architecture to efficiently handle evolving business requirements"
     ],
     "imageSrc": "history/tracip.png"
   },
@@ -20,10 +23,14 @@
     "organisation": "Venathec",
     "startDate": "September, 2022",
     "endDate": "September, 2023",
-    "experiences": [
+    "experiences": 
+    [
       "Contributed to the development of an internal ERP used across multiple departments",
       "Developed and maintained front-end components using HTML, CSS, and JavaScript",
-      "Handled data operations and business rules using PHP and custom SQL queries, without frameworks"
+      "Handled data operations and business rules using PHP and custom SQL queries, without frameworks",
+      "Created an equipment management module",
+      "Developed a material reservation module",
+      "Built a module enabling equipment transfers between company branches"
     ],
     "imageSrc": "history/venathec.png"
   }
