@@ -14,5 +14,9 @@
   {
     "title": "Flutter",
     "imageSrc": "skills/flutter.png"
+  },
+  {
+    "title": "ASP.NET",
+    "imageSrc": "skills/asp.png"
   }
 ]
