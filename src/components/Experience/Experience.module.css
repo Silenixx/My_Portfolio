@@ -1,23 +1,28 @@
 @import "../../vars.css";
 
+:root {
+  --card-bg: #19376d;
+  --card-bg-hover: #1e4aa3;
+}
+
 .container {
   color: var(--color-text);
-  margin-top: 79px;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-top: 64px;
+  padding-inline: min(6vw, 48px);
 }
 
 .title {
   color: var(--color-text);
-  font-size: 35px;
+  font-size: clamp(1.4rem, 2.5vw, 2.2rem);
   font-weight: 700;
   letter-spacing: 1.75px;
   text-transform: uppercase;
 }
 
+/* Si tu as une section "skills" adjacente, garde ce style. */
 .titleSectionSkills {
   color: var(--color-text);
-  font-size: 35px;
+  font-size: clamp(1.4rem, 2.5vw, 2.2rem);
   font-weight: 700;
   letter-spacing: 1.75px;
   text-transform: uppercase;
@@ -26,124 +31,158 @@
 
 .content {
   display: flex;
-  flex-direction: row;
-  /* justify-content: space-evenly; */
+  flex-direction: column;
+  gap: 16px;
   margin-top: 14px;
-  margin-left: 40px;
 }
 
+/* ============ Skills (si utilisé) ============ */
 .skills {
-  width: 45%;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
-  gap: 37px;
+  gap: 24px;
+  justify-content: center;
 }
 
 .skill {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 11px;
+  gap: 10px;
 }
 
 .skillImageContainer {
   background-color: var(--color-secondary);
-  border-radius: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 120px;
-  height: 120px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  width: clamp(80px, 18vw, 120px);
+  height: clamp(80px, 18vw, 120px);
 }
 
 .skillImageContainer img {
-  width: 75px;
+  width: clamp(44px, 10vw, 75px);
+  height: auto;
 }
 
 .skill p {
-  font-size: 25px;
+  font-size: clamp(0.95rem, 2.2vw, 1.25rem);
   font-family: var(--font-roboto);
   font-weight: 500;
 }
 
+/* ============ Timeline / History ============ */
 .history {
-  width: 75%;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 16px;
+  padding: 0;
+  list-style: none;
 }
 
 .historyItem {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 17px;
-  background: #19376d;
-  background: linear-gradient(90deg, #19376d 0%, rgba(25, 55, 109, 0) 100%);
-  border-radius: 10px;
-  padding: 24px;
-  width: 90em;
+  align-items: flex-start;
+  gap: 16px;
+  background: linear-gradient(90deg, var(--card-bg) 0%, rgba(25, 55, 109, 0) 100%);
+  border-radius: 12px;
+  padding: clamp(14px, 3.5vw, 24px);
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .historyItem img {
-  width: 125px;
+  width: clamp(64px, 14vw, 125px);
+  height: auto;
+  flex: 0 0 auto;
+  border-radius: 8px;
 }
 
 .historyItemDetails {
   font-family: var(--font-roboto);
+  min-width: 0; /* permet le wrap correct */
 }
 
 .historyItemDetails h3 {
-  font-size: 30px;
-  font-weight: 500;
+  font-size: clamp(1.05rem, 2.4vw, 1.875rem); /* 30px max */
+  font-weight: 600;
+  line-height: 1.25;
+  margin: 2px 0 6px;
 }
 
 .historyItemDetails p {
-  font-size: 20px;
+  font-size: clamp(0.95rem, 2vw, 1.125rem); /* 18px max */
   font-weight: 300;
+  margin: 0 0 8px;
+  opacity: 0.9;
 }
 
 .historyItemDetails ul {
-  margin-top: 15px;
+  margin-top: 8px;
+  list-style: disc;
   list-style-position: outside;
-  font-size: 25px;
-  list-style-type: disc;
-  margin-left: 20px;
-  padding-left: 1.5em;
+  font-size: clamp(0.98rem, 2.2vw, 1.25rem);
+  margin-left: 1.25rem;
+  padding-left: 0.75rem;
 }
 
-.historyItem:hover {
-  background: linear-gradient(90deg, #1e4aa3 0%, rgba(30, 74, 163, 0) 100%);
-  transform: translateY(-3px);
-  transition: all 0.3s ease;
-  cursor: default;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+.historyItemDetails ul li {
+  margin-bottom: 6px;
+  line-height: 1.35;
 }
 
-
-@media screen and (min-width: 831px) {
-  .historyItemDetails ul li {
-    margin-bottom: 6px;
-  }
+/* Hover/focus (touch-friendly) */
+.historyItem:hover,
+.historyItem:focus-within {
+  background: linear-gradient(90deg, var(--card-bg-hover) 0%, rgba(30, 74, 163, 0) 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
 }
 
+.historyItem {
+  transition: background 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+}
 
+/* ============ Media Queries ============ */
 
-@media screen and (max-width: 830px) {
+/* Tablette et en dessous : carte en colonne, meilleure lisibilité */
+@media (max-width: 830px) {
   .content {
-    flex-direction: column;
-    align-items: center;
-    gap: 34px;
+    gap: 20px;
   }
 
-  .skills {
-    width: 100%;
-    flex-direction: row;
-    justify-content: center;
+  .historyItem {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+
+  .historyItem img {
+    width: clamp(72px, 22vw, 110px);
   }
 
   .history {
-    width: 100%;
-    gap: 9px;
+    gap: 12px;
+  }
+}
+
+/* Très petits écrans */
+@media (max-width: 420px) {
+  .container {
+    padding-inline: 16px;
+  }
+
+  .historyItemDetails ul {
+    margin-left: 1rem;
+    padding-left: 0.5rem;
+  }
+}
+
+/* Respect des préférences utilisateur pour les animations */
+@media (prefers-reduced-motion: reduce) {
+  .historyItem {
+    transition: none;
   }
 }

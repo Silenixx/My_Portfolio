@@ -24,6 +24,7 @@
   letter-spacing: 2px;
 }
 
+/* ✅ Alignement parfait et homogénéité des icônes */
 .links {
   display: flex;
   flex-direction: column;
@@ -36,10 +37,16 @@
   display: flex;
   align-items: center;
   gap: 25px;
+  min-width: 250px;
+  line-height: 1; /* empêche le texte de se décaler verticalement */
 }
 
-.link a:hover {
-  color: #4a90e2; /* Couleur au survol */
+.link img {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  object-fit: contain;
+  display: block;
 }
 
 .link a {
@@ -48,8 +55,14 @@
   font-size: 30px;
   font-weight: 400;
   letter-spacing: 1.5px;
+  line-height: 1; /* garde l’alignement parfait avec l’icône */
 }
 
+.link a:hover {
+  color: #4a90e2;
+}
+
+/* ✅ Responsive */
 @media screen and (max-width: 830px) {
   .container {
     flex-direction: column;
@@ -60,9 +73,38 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center; /* centrage sur mobile */
   }
 
   .links {
     align-items: center;
+  }
+
+  .text h2 {
+    font-size: 60px;
+  }
+
+  .text p {
+    font-size: 30px;
+  }
+}
+
+/* ✅ Encore plus petit écran : ajustement fin */
+@media screen and (max-width: 500px) {
+  .text h2 {
+    font-size: 45px;
+  }
+
+  .text p {
+    font-size: 24px; /* réduction du "Feel free to reach out!" */
+  }
+
+  .link a {
+    font-size: 24px;
+  }
+
+  .link img {
+    width: 30px;
+    height: 30px;
   }
 }

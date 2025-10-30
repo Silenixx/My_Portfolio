@@ -1,5 +1,179 @@
 @import "../../vars.css";
 
+:root {
+  --card-bg: #19376d;
+  --card-bg-hover: #1e4aa3;
+}
+
+.container {
+  color: var(--color-text);
+  margin-top: 64px;
+  padding-inline: min(6vw, 48px);
+}
+
+.title {
+  color: var(--color-text);
+  font-size: clamp(1.4rem, 2.5vw, 2.2rem);
+  font-weight: 700;
+  letter-spacing: 1.75px;
+  text-transform: uppercase;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 14px;
+}
+
+/* Liste globale */
+.education {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 0;
+  list-style: none;
+}
+
+/* Carte formation */
+.educationItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  background: linear-gradient(90deg, var(--card-bg) 0%, rgba(25, 55, 109, 0) 100%);
+  border-radius: 12px;
+  padding: clamp(14px, 3.5vw, 24px);
+  width: 100%;
+  box-sizing: border-box;
+  transition: background 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.educationItem:hover,
+.educationItem:focus-within {
+  background: linear-gradient(90deg, var(--card-bg-hover) 0%, rgba(30, 74, 163, 0) 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+  cursor: default;
+}
+
+/* Logo */
+.educationItemLogo img {
+  width: clamp(64px, 14vw, 125px);
+  height: auto;
+  flex: 0 0 auto;
+  border-radius: 8px;
+}
+
+/* Contenu */
+.educationItemContent {
+  font-family: var(--font-roboto);
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0; /* wrap correct */
+}
+
+/* En-tête */
+.educationHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.programLine {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.metaLine {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  opacity: 0.95;
+}
+
+/* Textes */
+.program {
+  font-size: clamp(1.05rem, 2.4vw, 1.75rem);
+  font-weight: 600;
+  color: var(--color-text);
+  margin: 0;
+  line-height: 1.25;
+}
+
+.school {
+  font-size: clamp(0.98rem, 2.2vw, 1.1rem);
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.date {
+  font-size: clamp(0.92rem, 2vw, 1rem);
+  font-weight: 400;
+  color: #aaa;
+  white-space: nowrap;
+}
+
+.level {
+  font-size: clamp(0.82rem, 1.9vw, 0.95rem);
+  font-weight: 600;
+  color: #2196f3;
+  background-color: rgba(33, 150, 243, 0.15);
+  padding: 4px 12px;
+  border-radius: 12px;
+  white-space: nowrap;
+}
+
+/* Compétences (facultatif) */
+.skillsList {
+  margin-top: 8px;
+  list-style: disc;
+  padding-left: 1.25rem;
+  font-size: clamp(0.98rem, 2.2vw, 1.1rem);
+  line-height: 1.45;
+}
+
+/* Tablette & mobile : cartes en colonne */
+@media (max-width: 830px) {
+  .educationItem {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+
+  .education {
+    gap: 12px;
+  }
+}
+
+/* Très petits écrans */
+@media (max-width: 420px) {
+  .container {
+    padding-inline: 16px;
+  }
+
+  .skillsList {
+    padding-left: 1rem;
+  }
+}
+
+/* Respect des préférences utilisateur pour les animations */
+@media (prefers-reduced-motion: reduce) {
+  .educationItem {
+    transition: none;
+  }
+}
+
+
+
+/* @import "../../vars.css";
+
 .container {
   color: var(--color-text);
   margin-top: 79px;
@@ -51,7 +225,7 @@
   flex: 1;
 }
 
-/* Nouveaux blocs */
+
 
 .educationHeader {
   display: flex;
@@ -85,13 +259,13 @@
 .school {
   font-size: 17px;
   font-weight: 600;
-  color: #ffffff; /* bien visible, tu peux aussi mettre var(--color-text) */
+  color: #ffffff; 
 }
 
 .date {
   font-size: 15px;
   font-weight: 400;
-  color: #aaa; /* plus doux pour moins d’impact visuel */
+  color: #aaa; 
 }
 
 
@@ -105,7 +279,7 @@
   white-space: nowrap;
 }
 
-/* Facultatif : pour les compétences */
+
 .skillsList {
   margin-top: 10px;
   list-style: disc;
@@ -121,4 +295,4 @@
   transition: all 0.3s ease;
   cursor: default;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
+} */

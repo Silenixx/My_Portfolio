@@ -54,7 +54,6 @@
 .heroImg {
   width: 30%;
   z-index: 1;
-
   animation-name: floating;
   animation-duration: 3s;
   animation-iteration-count: infinite;
@@ -78,7 +77,6 @@
   width: 50vw;
   height: 50vw;
   min-width: 350px;
-  min-width: 350px;
   top: -128px;
   left: -10vw;
   border-radius: 764px;
@@ -91,7 +89,6 @@
   position: absolute;
   width: 70vw;
   height: 50vw;
-  min-width: 350px;
   min-width: 250px;
   top: 246px;
   right: -25vw;
@@ -101,12 +98,76 @@
   z-index: 0;
 }
 
+/* ✅ Ajustement progressif */
+@media screen and (max-width: 1200px) {
+  .title {
+    font-size: 60px;
+  }
+
+  .description {
+    font-size: 26px;
+  }
+
+  .contactBtn {
+    font-size: 26px;
+    padding: 15px 22px;
+  }
+
+  .heroImg {
+    width: 35%;
+  }
+}
+
 @media screen and (max-width: 830px) {
   .container {
     flex-direction: column-reverse;
+    text-align: center;
+    margin-top: 60px;
   }
 
   .content {
     align-items: center;
+  }
+
+  .heroImg {
+    width: 50%;
+    margin-top: 30px; /* ✅ ajoute de l’espace entre l’image et le texte */
+    margin-bottom: 30px; /* ✅ espace supplémentaire en dessous */
+  }
+
+  .title {
+    font-size: 48px;
+    margin-top: 10px;
+  }
+
+  .description {
+    font-size: 22px;
+    max-width: 90%;
+  }
+
+  .contactBtn {
+    font-size: 22px;
+    padding: 14px 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .title {
+    font-size: 36px;
+  }
+
+  .description {
+    font-size: 18px;
+  }
+
+  .contactBtn {
+    font-size: 18px;
+    padding: 12px 18px;
+  }
+
+  .heroImg {
+    width: 65%;
+    margin-top: 40px; /* ✅ encore un peu plus d’air sur très petit écran */
+    margin-bottom: 40px;
   }
 }
