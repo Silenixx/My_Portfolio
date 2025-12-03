@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Ce PortFolio",
+    "imageSrc": "projects/project.png",
+    "description": "Projet réalisé pour me présenter et m’entraîner avec React et Vite.js.",
+    "skills": ["React", "Vite.js", "Node"],
+    "demo": "https://portfolio.lukasblanchot.synology.me/",
+    "source": "https://github.com/Silenixx/My_Portfolio"
+  },
+  {
+    "title": "Site Personnel",
+    "imageSrc": "projects/project.png",
+    "description": "Développé avec Symfony pour le back-end et Next.js pour le front-end.",
+    "skills": ["React", "Symfony", "Node", "PHP", "MariaDB"],
+    "demo": "#",
+    "source": "https://github.com/Silenixx/lukas_website"
+  },
+  {
+    "title": "Application Personnelle",
+    "imageSrc": "projects/project.png",
+    "description": "Développée avec Flutter. Projet issu d’une idée commune : créer une application pour aider les gens à trouver des amis ou des activités à faire.",
+    "skills": ["Flutter", "Firebase", "Dart"],
+    "demo": "#",
+    "source": "#"
+  }
+]

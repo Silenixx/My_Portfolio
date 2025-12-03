@@ -1,7 +1,7 @@
 import React from "react";
 
 import styles from "./Education.module.css";
-import education from "../../data/education.json";
+import education from "../../data/en/education.json";
 import { getImageUrl } from "../../utils";
 
 export const Education = () => {

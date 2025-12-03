@@ -1,12 +1,12 @@
 import React from "react";
 
 import styles from "./Skills.module.css";
-import languageskills from "../../data/languageskills.json";
-import frameworkskills from "../../data/frameworkskills.json";
-import databaseskills from "../../data/databaseskills.json";
-import spokenlanguageskills from "../../data/spokenlanguageskills.json";
-import bonusskills from "../../data/bonusskills.json";
-import history from "../../data/history.json";
+import languageskills from "../../data/en/languageskills.json";
+import frameworkskills from "../../data/en/frameworkskills.json";
+import databaseskills from "../../data/en/databaseskills.json";
+import spokenlanguageskills from "../../data/en/spokenlanguageskills.json";
+import bonusskills from "../../data/en/bonusskills.json";
+import history from "../../data/en/history.json";
 import { getImageUrl } from "../../utils";
 
 export const Skills = () => {

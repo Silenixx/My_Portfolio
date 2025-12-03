@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Symfony",
+    "imageSrc": "skills/symfony.png"
+  },
+  {
+    "title": "Laravel",
+    "imageSrc": "skills/laravel.png"
+  },
+  {
+    "title": "React",
+    "imageSrc": "skills/react.png"
+  },
+  {
+    "title": "Flutter",
+    "imageSrc": "skills/flutter.png"
+  },
+  {
+    "title": "ASP.NET",
+    "imageSrc": "skills/asp.png"
+  }
+]

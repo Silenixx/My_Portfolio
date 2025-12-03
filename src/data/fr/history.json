@@ -1,0 +1,35 @@
+[
+  {
+    "role": "Développeur Full Stack & Chef de Projet",
+    "organisation": "Tracip by ChapsVision",
+    "startDate": "Octobre 2023",
+    "endDate": "Octobre 2025",
+    "experiences": [
+      "Pilotage du développement complet d’un ERP sur mesure, de la conception au déploiement",
+      "Conception du schéma de base de données, garantissant cohérence et évolutivité",
+      "Développement complet du back-end avec Symfony, orienté performance et maintenabilité",
+      "Création d’interfaces dynamiques et réactives sans frameworks frontend (Twig)",
+      "Gestion du cycle de vie complet du projet en collaboration avec plusieurs départements (formation, investigation, comptabilité, récupération de données)",
+      "Mise en place et automatisation du pipeline CI/CD : tests, build et déploiement complet en production",
+      "Travail en autonomie en tant que développeur principal responsable du projet",
+      "Encadrement et mentorat d’un stagiaire junior sur ses missions techniques",
+      "Mise en place d’une architecture modulaire pour répondre aux évolutions métier"
+    ],
+    "imageSrc": "history/tracip.png"
+  },
+  {
+    "role": "Développeur Full Stack",
+    "organisation": "Venathec",
+    "startDate": "Septembre 2022",
+    "endDate": "Septembre 2023",
+    "experiences": [
+      "Participation au développement d’un ERP interne utilisé par plusieurs services",
+      "Développement et maintenance des composants front-end en HTML, CSS et JavaScript",
+      "Gestion des données et des règles métiers avec PHP et requêtes SQL personnalisées, sans framework",
+      "Création d’un module de gestion du matériel",
+      "Développement d’un module de réservation d’équipements",
+      "Mise en place d’un système de transfert de matériel entre agences"
+    ],
+    "imageSrc": "history/venathec.png"
+  }
+]

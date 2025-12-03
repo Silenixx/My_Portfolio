@@ -1,7 +1,7 @@
 import React from "react";
 
 import styles from "./Experience.module.css";
-import history from "../../data/history.json";
+import history from "../../data/en/history.json";
 import { getImageUrl } from "../../utils";
 
 export const Experience = () => {

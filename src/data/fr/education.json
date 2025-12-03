@@ -1,0 +1,79 @@
+[
+  {
+    "program": "Master – Architecture Logicielle et Systèmes d’Information",
+    "school": "CESI",
+    "startDate": "Octobre 2023",
+    "endDate": "En cours",
+    "degreeStatus": "obtenu",
+    "level": "Bac +5",
+    "acquiredSkills": [
+      "Gestion de projet et méthodologies agiles",
+      "Architecture logicielle et code propre",
+      "Pratiques DevOps et pipelines CI/CD",
+      "Architecture d’entreprise et audit de système",
+      "Architectures cloud natives et microservices",
+      "Sécurité applicative et code sécurisé",
+      "Gestion de portefeuille de projets et gouvernance SI",
+      "Leadership d’équipe et communication avec les parties prenantes"
+    ],
+    "imageSrc": "education/cesi.png"
+  },
+  {
+    "program": "Licence – Développeur d’Applications et Concepteur Logiciel",
+    "school": "CESI",
+    "startDate": "Septembre 2022",
+    "endDate": "Septembre 2023",
+    "degreeStatus": "obtenu",
+    "level": "Bac +3",
+    "acquiredSkills": [
+      "Développement web avec React",
+      "Modélisation de bases de données et SQL",
+      "Développement mobile avec Flutter",
+      "Conception logicielle et design patterns",
+      "Développement collaboratif avec Git",
+      "Analyse des besoins et rédaction de spécifications",
+      "Programmation orientée objet et principes SOLID",
+      "Tests unitaires et TDD",
+      "Développement et intégration d’API REST",
+      "Optimisation des performances et débogage"
+    ],
+    "imageSrc": "education/cesi.png"
+  },
+  {
+    "program": "Études d’Ingénierie – Informatique (3e année)",
+    "school": "Université de Technologie de Belfort-Montbéliard",
+    "startDate": "Juin 2021",
+    "endDate": "Juin 2022",
+    "degreeStatus": "non obtenu",
+    "acquiredSkills": [
+      "Programmation des microprocesseurs",
+      "Systèmes embarqués",
+      "Programmation orientée objet",
+      "Architecture et modélisation des systèmes",
+      "Conception et optimisation de bases de données",
+      "Systèmes d’exploitation et programmation bas niveau",
+      "Spécification logicielle et ingénierie des exigences",
+      "Intégration de systèmes et middleware",
+      "Tests, débogage et optimisation des performances"
+    ],
+    "imageSrc": "education/utbm.png"
+  },
+  {
+    "program": "Classe Préparatoire aux Écoles d’Ingénieurs",
+    "school": "Université de Technologie de Belfort-Montbéliard",
+    "startDate": "Septembre 2019",
+    "endDate": "Juin 2021",
+    "degreeStatus": "non obtenu",
+    "acquiredSkills": [
+      "Mathématiques et raisonnement logique",
+      "Fondamentaux d’algorithmique",
+      "Introduction à la programmation (Python, Java, C, C++, VBA)",
+      "Bases de la physique et de l’électronique numérique",
+      "Introduction aux bases de données et aux structures de données",
+      "Architecture des ordinateurs et principes de fonctionnement",
+      "Méthodologie de projet d’ingénierie",
+      "Communication technique et anglais scientifique"
+    ],
+    "imageSrc": "education/utbm.png"
+  }
+]
