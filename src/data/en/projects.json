@@ -1,26 +1,44 @@
 [
   {
-    "title": "This PortFolio",
-    "imageSrc": "projects/project.png",
-    "description": "This is a project made to present myself and train myself using react and vite.js.",
-    "skills": ["React", "Vite.js", "Node"],
-    "demo": "https://portfolio.lukasblanchot.synology.me/",
-    "source": "https://github.com/Silenixx/My_Portfolio"
+    "title": "This Portfolio",
+    "imageSrc": "projects/portfolio.png",
+    "description": "Project created to introduce myself and practice React with the Vite bundler.",
+    "skills": ["React", "Vite", "Node", "HTML", "CSS", "JavaScript"],
+    "demo": "https://lukasblanchot.fr/"
   },
   {
-    "title": "Personal Website",
-    "imageSrc": "projects/project.png",
-    "description": "Build in symfony for the back-end and next.js for the front-end.",
-    "skills": ["React", "Symfony", "Node", "PHP", "MariaDB"],
-    "demo": "#",
-    "source": "https://github.com/Silenixx/lukas_website"
+    "title": "🎬 Movie App — Laravel VueJs Version",
+    "imageSrc": "projects/laravelmovie.png",
+    "description": "Variation of the same multi-technology project that I develop in several stacks to demonstrate my versatility.\nThis version uses Laravel for the API and Vue.js for the dynamic interface.\nThe application allows browsing, filtering and managing a movie & series catalog, with MySQL integration and performance optimizations.",
+    "longDescription": "<br><p><strong style='font-size:1.05em;'>This project is part of a set of applications that I intentionally build using <em>different front-end and back-end technologies</em>.</strong> The goal is to showcase my ability to switch environments quickly, master several stacks, and demonstrate my motivation to improve continuously.</p><p>This web application manages a <strong>movie and TV show catalog</strong>, enriched through the TVDB API and connected to a <strong>MySQL</strong> database.<br>The user can search for a movie or series, view the retrieved information, and add it directly to the catalog.</p><p>Once added, each item includes a fully detailed page with:</p><ul><li><strong>title</strong>,</li><li><strong>description</strong>,</li><li><strong>genres</strong>,</li><li><strong>artworks / posters</strong>,</li><li><strong>cast</strong>,</li><li><strong>studios</strong>,</li><li><strong>production crew</strong>,</li><li><strong>seasons and episodes</strong> for TV shows.</li></ul><p>The platform also includes a user area where someone can:</p><ul><li><strong>create an account / log in</strong>,</li><li><strong>like or dislike</strong> movies or series,</li><li><strong>add titles to a watchlist</strong>,</li><li><strong>find followed or favorite content</strong>.</li></ul><p>This version highlights the capabilities of <strong>Laravel</strong> and <strong>VueJS</strong>, including API management, MySQL integration, complex data handling, and a smooth user experience.</p>",
+    "skills": ["Laravel", "VueJS", "Node", "PHP", "NodeJs", "MySQL", "Vite"],
+    "demo": "https://laravel-vue.lukasblanchot.fr/"
   },
+
   {
-    "title": "Personal application",
-    "imageSrc": "projects/project.png",
-    "description": "Made with flutter. From a common idea with a friend. We wanted to make an app to help people to find friends or activities to do.",
-    "skills": ["Flutter", "Firebase", "Dart"],
-    "demo": "#",
-    "source": "#"
+    "title": "🎬 Movie App — Symfony VueJs Version",
+    "imageSrc": "projects/symfonymovie.png",
+    "description": "Variation of the same multi-technology project developed to demonstrate my versatility.\nThis version uses Symfony for the REST API and Vue.js for the dynamic interface.\nThe application allows browsing, filtering and managing a movie & series catalog with advanced entity management and performance optimization.",
+    "longDescription": "<br><p><strong style='font-size:1.05em;'>This project is part of a set of applications developed using <em>different front-end and back-end environments</em>.</strong> The goal is to highlight my ability to quickly adapt, master modern stacks, and stay motivated to continually improve.</p><p>This version uses <strong>Symfony</strong> for the back-end: structured REST API, user management, JWT security, serialization, and complex Doctrine relations.</p><p>Like the other variants, it manages a <strong>movie & TV show catalog</strong> connected to a <strong>MySQL</strong> database and enriched via the TVDB API.</p><p>Each added item includes a detailed page with:</p><ul><li><strong>title</strong>,</li><li><strong>description</strong>,</li><li><strong>genres</strong>,</li><li><strong>artworks / posters</strong>,</li><li><strong>cast</strong>,</li><li><strong>studios</strong>,</li><li><strong>production crew</strong>,</li><li><strong>seasons and episodes</strong> for TV shows.</li></ul><p>The user area allows:</p><ul><li><strong>account creation / login</strong>,</li><li><strong>liking / disliking</strong> items,</li><li><strong>managing a watchlist</strong>,</li><li><strong>retrieving favorites and followed series</strong>.</li></ul><p>This version showcases the strengths of <strong>Symfony</strong> (clean architecture, security, performance) combined with <strong>Vue.js</strong> for a modern, reactive and fast interface.</p>",
+    "skills": ["Symfony", "VueJS", "PHP", "MySQL", "REST API", "Vite"],
+    "demo": "https://symfony-vue.lukasblanchot.fr/"
+  },
+
+  {
+    "title": "🎬 Movie App — .NET Angular Version",
+    "imageSrc": "projects/dotnetmovie.png",
+    "description": "Variation of the same multi-technology project developed to demonstrate my mastery of different environments.\nThis version uses .NET for the API and Angular for the interface.\nThe application manages a movie & series catalog with optimized performance and a clean architecture.",
+    "longDescription": "<br><p><strong style='font-size:1.05em;'>This version is part of a series of implementations built with <em>different front-end/back-end stacks</em> to demonstrate my ability to work across various ecosystems.</strong></p><p>The back-end is developed in <strong>.NET</strong> (C#) with a clean architecture, REST controllers, Entity Framework for data access, and solid security handling.</p><p>The front-end is fully built with <strong>Angular</strong>, offering a reactive, modular and high-performance interface.</p><p>Like the other variants, this app manages a <strong>movie & TV show catalog</strong> enriched with the TVDB API and stored in <strong>SQL Server</strong> or <strong>MySQL</strong>.</p><p>Each item page includes:</p><ul><li><strong>title</strong>,</li><li><strong>description</strong>,</li><li><strong>genres</strong>,</li><li><strong>posters</strong>,</li><li><strong>cast</strong>,</li><li><strong>studios</strong>,</li><li><strong>technical crew</strong>,</li><li><strong>seasons & episodes</strong>.</li></ul><p>The user area allows:</p><ul><li><strong>account creation</strong>,</li><li><strong>authentication</strong>,</li><li><strong>liking / disliking</strong> items,</li><li><strong>watchlist management</strong>,</li><li><strong>tracking favorites</strong>.</li></ul><p>This version showcases the strong structure and performance of <strong>.NET</strong> combined with the power of <strong>Angular</strong> for building fast, modular user interfaces.</p>",
+    "skills": [".NET", "C#", "Angular", "TypeScript", "SQL", "REST API"],
+    "demo": "https://dotnet-angular.lukasblanchot.fr/"
+  },
+
+  {
+    "title": "🎬 Movie App — Spring Boot React Version",
+    "imageSrc": "projects/springbootmovie.png",
+    "description": "Variation of the same multi-technology project developed to demonstrate my versatility.\nThis version uses Spring Boot for the API and React for the front-end.\nThe app manages a movie & series catalog with a robust Java architecture and a reactive interface.",
+    "longDescription": "<br><p><strong style='font-size:1.05em;'>This version is part of a set of projects built with <em>different framework combinations</em> to highlight my adaptability and motivation.</strong></p><p>The back-end uses <strong>Spring Boot</strong> with a structured REST API, JPA/Hibernate entities, and serious focus on performance and security.</p><p>The front-end is built with <strong>React</strong>, delivering a modern, fluid and highly interactive interface.</p><p>The application manages a <strong>movie & TV show catalog</strong>, enriched by the TVDB API and stored in a <strong>MySQL</strong> database.</p><p>Each item page includes:</p><ul><li><strong>title</strong>,</li><li><strong>description</strong>,</li><li><strong>genres</strong>,</li><li><strong>posters</strong>,</li><li><strong>cast</strong>,</li><li><strong>studios</strong>,</li><li><strong>technical crew</strong>,</li><li><strong>seasons / episodes</strong>.</li></ul><p>The user area allows:</p><ul><li><strong>account creation</strong>,</li><li><strong>login</strong>,</li><li><strong>liking / disliking</strong> movies,</li><li><strong>managing a watchlist</strong>,</li><li><strong>finding favorites</strong>.</li></ul><p>This version highlights the power of <strong>Spring Boot</strong> combined with the flexibility and speed of <strong>React</strong> for a smooth modern experience.</p>",
+    "skills": ["Spring Boot", "Java", "React", "MySQL", "REST API"],
+    "demo": "https://springboot-react.lukasblanchot.fr/"
   }
 ]

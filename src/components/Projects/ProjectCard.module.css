@@ -55,7 +55,19 @@
   font-size: 16px;
   line-height: 1.45;
   opacity: 0.95;
-  white-space: pre-line; /* respecte les \n */
+  white-space: pre-line;       /* 🔥 respecte les \n */
+}
+
+.description {
+  white-space: pre-line;
+}
+
+.description {
+  display: block;
+}
+
+.description > * + * {
+  margin-top: 10px; /* espace entre paragraphes */
 }
 
 /* ===== BOTTOM ZONE ===== */

@@ -22,7 +22,12 @@ export const ProjectCard = ({ project }) => {
 
         <div className={styles.content}>
           <h3 className={styles.title}>{title}</h3>
-          <p className={styles.description}>{description}</p>
+          <div className={styles.description}>
+            {description.split("\n").map((line, i) => (
+              <p key={i}>{line}</p>
+            ))}
+          </div>
+
         </div>
 
         <div className={styles.bottomZone}>
@@ -34,11 +39,20 @@ export const ProjectCard = ({ project }) => {
 
           {/* 🔥 Nouveau bloc de boutons propres */}
           <div className={styles.actions}>
-            <a href={demo} className={styles.btnDemo}>{demoLabel}</a>
+            <a
+              href={demo}
+              className={styles.btnDemo}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {demoLabel}
+            </a>
+
             <button className={styles.btnDetails} onClick={() => setOpen(true)}>
               {detailsLabel}
             </button>
           </div>
+
         </div>
       </div>
 
