@@ -1,5 +1,17 @@
 [
   {
+    "role": "Chef de projet / Analyste développeur",
+    "organisation": "Abylsen",
+    "startDate": "Octobre 2025",
+    "endDate": "Aujourd’hui",
+    "experiences": [
+      "Montée en compétence sur des technologies en adéquation avec le marché",
+      "Création de projets dans ces technologies en vue d'entretiens techniques"
+    ],
+    "technologies": ["Dotnet", "Springboot", "VueJs", "Angular","Java", "TypeScript"],
+    "imageSrc": "history/abylsen.jpg"
+  },
+  {
     "role": "Développeur Full Stack & Chef de Projet",
     "organisation": "Tracip by ChapsVision",
     "startDate": "Octobre 2023",
@@ -15,6 +27,7 @@
       "Encadrement et mentorat d’un stagiaire junior sur ses missions techniques",
       "Mise en place d’une architecture modulaire pour répondre aux évolutions métier"
     ],
+    "technologies": ["Symfony", "PHP", "GIT", "Twig", "React", "Mysql", "Docker", "Gitlab CI/CD","HTML", "CSS", "Bootstrap"],
     "imageSrc": "history/tracip.png"
   },
   {
@@ -30,6 +43,7 @@
       "Développement d’un module de réservation d’équipements",
       "Mise en place d’un système de transfert de matériel entre agences"
     ],
+    "technologies": ["PHP", "HTML","GIT", "CSS", "JavaScript", "SQL"],
     "imageSrc": "history/venathec.png"
   }
 ]

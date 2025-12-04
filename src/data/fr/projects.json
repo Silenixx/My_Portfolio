@@ -1,26 +1,25 @@
 [
   {
     "title": "Ce PortFolio",
-    "imageSrc": "projects/project.png",
-    "description": "Projet réalisé pour me présenter et m’entraîner avec React et Vite.js.",
-    "skills": ["React", "Vite.js", "Node"],
-    "demo": "https://portfolio.lukasblanchot.synology.me/",
-    "source": "https://github.com/Silenixx/My_Portfolio"
+    "imageSrc": "projects/portfolio.png",
+    "description": "Projet réalisé pour me présenter et m’entraîner avec React et le bundler Vite.",
+    "skills": ["React", "Vite", "Node", "HTML", "CSS", "JavaScript"],
+    "demo": "https://lukasblanchot.fr/"
   },
   {
-    "title": "Site Personnel",
+    "title": "🎬 Catalogue de films & séries — Version Laravel VueJs",
     "imageSrc": "projects/project.png",
-    "description": "Développé avec Symfony pour le back-end et Next.js pour le front-end.",
-    "skills": ["React", "Symfony", "Node", "PHP", "MariaDB"],
-    "demo": "#",
-    "source": "https://github.com/Silenixx/lukas_website"
+    "description": "Application permettant de parcourir, filtrer et gérer un catalogue de films et séries.\nDéveloppée en Laravel (API REST, utilisateurs, sécurité) et Vue.js (UI dynamique).\nIntégration MySQL et optimisation des performances.",
+    "longDescription": "Ce projet est un site web complet permettant de gérer un catalogue de films et de séries, alimenté par l’API TVDB et une base de données MySQL. L’utilisateur peut rechercher un film ou une série via l’API, afficher les informations récupérées, puis l’ajouter directement au catalogue.\n\nChaque contenu ajouté possède une fiche très complète comprenant : le titre, la description, les genres, les artworks et affiches, la distribution (cast), les studios, l’équipe technique ainsi que les saisons et épisodes dans le cas des séries.\n\nLe site dispose également d'un espace utilisateur permettant de créer un compte, se connecter, liker ou disliker un contenu, ajouter des titres à une watchlist et retrouver facilement ses favoris ou séries suivies.\n\nCe projet met en avant les capacités de la technologie BLABLA BLABLA, notamment dans la gestion d’appels API, l’intégration MySQL, la manipulation de données complexes et la fluidité de l’expérience utilisateur.",
+    "skills": ["Laravel", "VueJS", "Node", "PHP", "NodeJs", "Mysql", "Vite"],
+    "demo": "#"
+    
   },
   {
     "title": "Application Personnelle",
     "imageSrc": "projects/project.png",
     "description": "Développée avec Flutter. Projet issu d’une idée commune : créer une application pour aider les gens à trouver des amis ou des activités à faire.",
     "skills": ["Flutter", "Firebase", "Dart"],
-    "demo": "#",
-    "source": "#"
+    "demo": "#"
   }
 ]

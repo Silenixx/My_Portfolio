@@ -1,5 +1,17 @@
 [
   {
+    "role": "Project Manager / Developer Analyst",
+    "organisation": "Abylsen",
+    "startDate": "October 2025",
+    "endDate": "Present",
+    "experiences": [
+      "Skills development on technologies aligned with market expectations",
+      "Creation of projects using these technologies in preparation for technical interviews"
+    ],
+    "technologies": ["Dotnet", "Springboot", "VueJs", "Angular", "Java", "TypeScript"],
+    "imageSrc": "history/abylsen.jpg"
+  },
+  {
     "role": "Full Stack Developer & Project Manager",
     "organisation": "Tracip by ChapsVision",
     "startDate": "October, 2023",

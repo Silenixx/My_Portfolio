@@ -1,12 +1,12 @@
 [
 {
     "title": "GraphQL",
-    "imageSrc": "skills/graphql.png"
+    "imageSrc": "skills/graphql.svg"
 },
 
 {
     "title": "Figma",
-    "imageSrc": "skills/figma.png"
+    "imageSrc": "skills/figma.svg"
 }
 
 ]

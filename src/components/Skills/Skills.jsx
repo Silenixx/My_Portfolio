@@ -1,77 +1,118 @@
 import React from "react";
-
 import styles from "./Skills.module.css";
-import languageskills from "../../data/en/languageskills.json";
-import frameworkskills from "../../data/en/frameworkskills.json";
-import databaseskills from "../../data/en/databaseskills.json";
-import spokenlanguageskills from "../../data/en/spokenlanguageskills.json";
-import bonusskills from "../../data/en/bonusskills.json";
-import history from "../../data/en/history.json";
 import { getImageUrl } from "../../utils";
+import { useLanguage } from "../../context/LanguageContext";
+
+// — JSON EN —
+import languagesEn from "../../data/en/languageskills.json";
+import frameworksBackendEn from "../../data/en/frameworkskillsbackend.json";
+import frameworksFrontendEn from "../../data/fr/frameworkskillsfrontend.json";
+import databasesEn from "../../data/en/databaseskills.json";
+import spokenEn from "../../data/en/spokenlanguageskills.json";
+import bonusEn from "../../data/en/bonusskills.json";
+
+// — JSON FR —
+import languagesFr from "../../data/fr/languageskills.json";
+import frameworksBackendFr from "../../data/fr/frameworkskillsbackend.json";
+import frameworksFrontendFr from "../../data/fr/frameworkskillsfrontend.json";
+import databasesFr from "../../data/fr/databaseskills.json";
+import spokenFr from "../../data/fr/spokenlanguageskills.json";
+import bonusFr from "../../data/fr/bonusskills.json";
 
 export const Skills = () => {
+  const { language } = useLanguage();
+
+  // Sélection des bons fichiers JSON selon la langue
+  const languages = language === "en" ? languagesEn : languagesFr;
+  const frameworksBackend = language === "en" ? frameworksBackendEn : frameworksBackendFr;
+  const frameworksFrontend = language === "en" ? frameworksFrontendEn : frameworksFrontendFr;
+  const databases = language === "en" ? databasesEn : databasesFr;
+  const spoken = language === "en" ? spokenEn : spokenFr;
+  const bonus = language === "en" ? bonusEn : bonusFr;
+
+  // Titres sous ton contrôle
+  const title = language === "en" ? "Skills" : "Compétences";
+  const tLanguages =
+    language === "en" ? "Programming languages (and others)" : "Langages de programmation (et autres)";
+  const tFrameworksBackend = language === "en" ? "Frameworks Backend" : "Frameworks Backend";
+  const tFrameworksFrontend = language === "en" ? "Frameworks Frontend" : "Frameworks Frontend";
+  const tDatabases = language === "en" ? "Database" : "Bases de données";
+  const tSpoken = language === "en" ? "Spoken languages" : "Langues parlées";
+  const tBonus = language === "en" ? "Other skills" : "Autres compétences";
+
   return (
     <section className={styles.container} id="skills">
-      <h2 className={styles.title}>Skills</h2>
+      <h2 className={styles.title}>{title}</h2>
       <div className={styles.content}>
         <div className={styles.skills}>
-          <h4 className={styles.titleSectionSkills}>Programming languages</h4>
-          {languageskills.map((languageskills, id) => {
-            return (
-              <div key={id} className={styles.skill}>
-                <div className={styles.skillImageContainer}>
-                  <img src={getImageUrl(languageskills.imageSrc)} alt={languageskills.title} />
-                </div>
-                <p>{languageskills.title}</p>
+
+          {/* Programming languages */}
+          <h4 className={styles.titleSectionSkills}>{tLanguages}</h4>
+          {languages.map((item, id) => (
+            <div key={id} className={styles.skill}>
+              <div className={styles.skillImageContainer}>
+                <img src={getImageUrl(item.imageSrc)} alt={item.title} />
               </div>
-            );
-          })}
-          <h4 className={styles.titleSectionSkills}>Framework</h4>
-          {frameworkskills.map((frameworkskills, id) => {
-            return (
-              <div key={id} className={styles.skill}>
-                <div className={styles.skillImageContainer}>
-                  <img src={getImageUrl(frameworkskills.imageSrc)} alt={frameworkskills.title} />
-                </div>
-                <p>{frameworkskills.title}</p>
+              <p>{item.title}</p>
+            </div>
+          ))}
+
+          {/* Framework */}
+          <h4 className={styles.titleSectionSkills}>{tFrameworksBackend}</h4>
+          {frameworksBackend.map((item, id) => (
+            <div key={id} className={styles.skill}>
+              <div className={styles.skillImageContainer}>
+                <img src={getImageUrl(item.imageSrc)} alt={item.title} />
               </div>
-            );
-          })}
-          <h4 className={styles.titleSectionSkills}>Database</h4>
-          {databaseskills.map((databaseskills, id) => {
-            return (
-              <div key={id} className={styles.skill}>
-                <div className={styles.skillImageContainer}>
-                  <img src={getImageUrl(databaseskills.imageSrc)} alt={databaseskills.title} />
-                </div>
-                <p>{databaseskills.title}</p>
+              <p>{item.title}</p>
+            </div>
+          ))}
+
+          <h4 className={styles.titleSectionSkills}>{tFrameworksFrontend}</h4>
+          {frameworksFrontend.map((item, id) => (
+            <div key={id} className={styles.skill}>
+              <div className={styles.skillImageContainer}>
+                <img src={getImageUrl(item.imageSrc)} alt={item.title} />
               </div>
-            );
-          })}
-          <h4 className={styles.titleSectionSkills}>Spoken languages</h4>
-          {spokenlanguageskills.map((spokenlanguageskills, id) => {
-            return (
-              <div key={id} className={styles.skill}>
-                <div className={styles.skillImageContainer}>
-                  <img src={getImageUrl(spokenlanguageskills.imageSrc)} alt={spokenlanguageskills.title} />
-                </div>
-                <p>{spokenlanguageskills.title}</p>
+              <p>{item.title}</p>
+            </div>
+          ))}
+
+          {/* Database */}
+          <h4 className={styles.titleSectionSkills}>{tDatabases}</h4>
+          {databases.map((item, id) => (
+            <div key={id} className={styles.skill}>
+              <div className={styles.skillImageContainer}>
+                <img src={getImageUrl(item.imageSrc)} alt={item.title} />
               </div>
-            );
-          })}
-          {/* <h4 className={styles.titleSectionSkills}>Other skills</h4>
-          {bonusskills.map((bonusskills, id) => {
-            return (
-              <div key={id} className={styles.skill}>
-                <div className={styles.skillImageContainer}>
-                  <img src={getImageUrl(bonusskills.imageSrc)} alt={bonusskills.title} />
-                </div>
-                <p>{bonusskills.title}</p>
+              <p>{item.title}</p>
+            </div>
+          ))}
+
+          {/* Spoken languages */}
+          <h4 className={styles.titleSectionSkills}>{tSpoken}</h4>
+          {spoken.map((item, id) => (
+            <div key={id} className={styles.skill}>
+              <div className={styles.skillImageContainer}>
+                <img src={getImageUrl(item.imageSrc)} alt={item.title} />
               </div>
-            );
-          })} */}
+              <p>{item.title}</p>
+            </div>
+          ))}
+
+          {/* Bonus skills (optionnel) */}
+          {/* 
+          <h4 className={styles.titleSectionSkills}>{tBonus}</h4>
+          {bonus.map((item, id) => (
+            <div key={id} className={styles.skill}>
+              <div className={styles.skillImageContainer}>
+                <img src={getImageUrl(item.imageSrc)} alt={item.title} />
+              </div>
+              <p>{item.title}</p>
+            </div>
+          ))}
+          */}
         </div>
-        
       </div>
     </section>
   );

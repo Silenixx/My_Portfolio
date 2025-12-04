@@ -2,18 +2,18 @@
 
   {
     "title": "MySQL",
-    "imageSrc": "skills/mysql.png"
+    "imageSrc": "skills/mysql.svg"
   },
   {
     "title": "PostgreSQL",
-    "imageSrc": "skills/postgresql.png"
+    "imageSrc": "skills/postgresql.svg"
   },
   {
     "title": "MariaDB",
-    "imageSrc": "skills/mariadb.png"
+    "imageSrc": "skills/mariadb.svg"
   },
   {
     "title": "MongoDB",
-    "imageSrc": "skills/mongodb.png"
+    "imageSrc": "skills/mongodb.svg"
   }
 ]

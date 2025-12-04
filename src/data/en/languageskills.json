@@ -2,39 +2,43 @@
 
   {
     "title": "HTML",
-    "imageSrc": "skills/html.png"
+    "imageSrc": "skills/html.svg"
   },
   {
     "title": "CSS",
-    "imageSrc": "skills/css.png"
+    "imageSrc": "skills/css.svg"
   },
   {
     "title": "JS",
-    "imageSrc": "skills/js.webp"
+    "imageSrc": "skills/javascript.svg"
   },
   {
     "title": "Node",
-    "imageSrc": "skills/node.png"
+    "imageSrc": "skills/node.svg"
   },
   {
     "title": "PHP",
-    "imageSrc": "skills/php.png"
+    "imageSrc": "skills/php.svg"
   },
   {
     "title": "C++",
-    "imageSrc": "skills/c++.png"
+    "imageSrc": "skills/c++.svg"
+  },
+  {
+    "title": "C",
+    "imageSrc": "skills/c.svg"
   },
   {
     "title": "C#",
-    "imageSrc": "skills/csharp.png"
+    "imageSrc": "skills/csharp.svg"
   },
   {
     "title": "Python",
-    "imageSrc": "skills/python.png"
+    "imageSrc": "skills/python.svg"
   },
   {
     "title": "Dart",
-    "imageSrc": "skills/dart.png"
+    "imageSrc": "skills/dart.svg"
   }
   
 ]

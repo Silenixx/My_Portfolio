@@ -80,3 +80,23 @@
     z-index: 1;
   }
 }
+
+
+
+.langSwitch {
+  margin-right: 20px;
+  background: transparent;
+  color: var(--color-text);
+  border: 2px solid var(--color-text);
+  padding: 6px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.langSwitch:hover {
+  background-color: var(--color-text);
+  color: var(--color-bg);
+}
