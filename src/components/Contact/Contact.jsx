@@ -13,13 +13,13 @@ export const Contact = () => {
       ? "Feel free to reach out!"
       : "N'hésite pas à me contacter !";
 
-  const mailLabel = language === "en" ? "my mail" : "mon email";
+  const mailLabel = language === "en" ? " My mail" : "Mon email";
   const linkedinLabel =
-    language === "en" ? "linkedin.com" : "mon LinkedIn";
+    language === "en" ? "My LinkedIn" : "Mon LinkedIn";
   const githubLabel =
-    language === "en" ? "github.com" : "mon GitHub";
+    language === "en" ? "My GitHub" : "Mon GitHub";
   const secretLabel =
-    language === "en" ? "secret.com" : "secret.com"; // tu peux changer ça si tu veux
+    language === "en" ? "Secret" : "Secret"; // tu peux changer ça si tu veux
   // --------------------------------
 
   return (
