@@ -8,7 +8,12 @@
 .container {
   color: var(--color-text);
   margin-top: 64px;
-  padding-inline: min(6vw, 48px);
+
+  /* ALIGNÉ AVEC PROJETS & ÉDUCATION */
+  margin-left: 10%;
+  margin-right: 10%;
+
+  /* ❌ suppression du padding-inline */
 }
 
 .title {
@@ -34,6 +39,9 @@
   flex-direction: column;
   gap: 16px;
   margin-top: 14px;
+
+  /* ❌ on enlève le padding qui écrasait tout */
+  padding: 0;
 }
 
 /* ============ Skills (si utilisé) ============ */

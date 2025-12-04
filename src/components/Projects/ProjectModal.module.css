@@ -1,74 +1,180 @@
+/* ===== OVERLAY ===== */
 .overlay {
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,0.65);
-  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(6px);
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 20px;
   z-index: 5000;
 }
 
+/* ===== MODAL ===== */
 .modal {
   background: #0f1d3a;
   border-radius: 16px;
-  padding: 32px;
-  width: min(600px, 90%);
-  max-height: 80vh;
+  padding: 40px;
+  width: min(900px, 90%);   /* 🔥 élargi */
+  max-height: 85vh;         /* plus grand */
   overflow-y: auto;
-  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  box-shadow: 0 0 25px rgba(0,0,0,0.55);
   position: relative;
   animation: fadeIn 0.25s ease;
 }
 
+/* Anim */
 @keyframes fadeIn {
-  from { opacity: 0; transform: scale(0.95); }
-  to { opacity: 1; transform: scale(1); }
+  from { opacity: 0; transform: scale(0.92); }
+  to   { opacity: 1; transform: scale(1); }
 }
 
+/* ===== BTN CLOSE ===== */
 .closeBtn {
   position: absolute;
-  top: 16px;
-  right: 16px;
-  font-size: 22px;
+  top: 18px;
+  right: 18px;
+  font-size: 28px;
   background: none;
   border: none;
   color: white;
   cursor: pointer;
+  opacity: 0.8;
+  transition: 0.2s;
 }
 
+.closeBtn:hover {
+  opacity: 1;
+  transform: scale(1.12);
+}
+
+/* ===== TITRE ===== */
 .title {
-  font-size: 26px;
+  font-size: 30px;
   font-weight: 700;
-  margin-bottom: 14px;
+  margin-bottom: 18px;
+  line-height: 1.2;
 }
 
+/* ===== TEXTE ===== */
 .text {
-  font-size: 17px;
-  line-height: 1.45;
-  margin-bottom: 22px;
-  opacity: 0.9;
+  font-size: 18px;
+  line-height: 1.58;
+  margin-bottom: 26px;
+  opacity: 0.92;
+  white-space: pre-line; /* ⬅️ gère automatiquement les sauts de ligne */
 }
 
+/* ===== SOUS-TITRE ===== */
 .subTitle {
-  margin-top: 20px;
-  margin-bottom: 10px;
-  font-size: 20px;
+  margin-top: 24px;
+  margin-bottom: 12px;
+  font-size: 22px;
   font-weight: 600;
 }
 
+/* ===== BADGES ===== */
 .skills {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 10px;
   list-style: none;
   padding: 0;
 }
 
 .skill {
   background: rgba(255,255,255,0.15);
-  padding: 6px 14px;
+  padding: 7px 16px;
   border-radius: 12px;
-  font-size: 14px;
+  font-size: 15px;
   color: white;
+  font-weight: 600;
+  backdrop-filter: blur(3px);
+  transition: 0.2s ease;
+}
+
+.skill:hover {
+  background: rgba(255,255,255,0.25);
+  transform: translateY(-2px);
+}
+
+
+.text ul {
+  margin: 14px 0;
+  padding-left: 22px;
+}
+
+.text li {
+  margin-bottom: 8px;
+  line-height: 1.45;
+}
+
+.text p {
+  margin-bottom: 16px;
+  line-height: 1.55;
+}
+
+
+/* ===== RESPONSIVE ===== */
+/* 🟦 VERSION MOBILE (moins de 600px) */
+@media (max-width: 600px) {
+
+  .overlay {
+    padding: 0 !important;
+    align-items: flex-start !important;
+  }
+
+  .modal {
+    width: 100% !important;
+    height: 100vh !important;
+    max-height: 100vh !important;
+    border-radius: 0 !important;
+    padding: 20px 20px 40px !important;
+    margin: 0 !important;
+  }
+
+  .title {
+    font-size: 22px !important;
+    margin-top: 55px !important;
+  }
+
+  .closeBtn {
+    position: fixed !important;
+    top: 14px !important;
+    right: 14px !important;
+    font-size: 26px !important;
+    z-index: 10 !important;
+  }
+
+  .text {
+    font-size: 16px !important;
+    line-height: 1.45 !important;
+  }
+
+  .skill {
+    font-size: 13px !important;
+    padding: 5px 12px !important;
+  }
+}
+
+
+/* ===== SCROLLBAR CUSTOM ===== */
+.modal::-webkit-scrollbar {
+  width: 8px;               /* épaisseur */
+}
+
+.modal::-webkit-scrollbar-track {
+  background: rgba(255,255,255,0.05); 
+  border-radius: 10px;
+}
+
+.modal::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.25);
+  border-radius: 10px;
+  transition: background 0.2s ease;
+}
+
+.modal::-webkit-scrollbar-thumb:hover {
+  background: rgba(255,255,255,0.4);
 }

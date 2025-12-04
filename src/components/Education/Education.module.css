@@ -7,8 +7,11 @@
 
 .container {
   color: var(--color-text);
+
+  /* EXACTEMENT comme la section Projets */
   margin-top: 64px;
-  padding-inline: min(6vw, 48px);
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .title {
@@ -24,6 +27,9 @@
   flex-direction: column;
   gap: 16px;
   margin-top: 14px;
+
+  /* On enlève le padding qui collait tout */
+  padding: 0;
 }
 
 /* Liste globale */
